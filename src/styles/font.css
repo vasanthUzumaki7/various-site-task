@@ -30,7 +30,7 @@
 /* Zodiak */
 @font-face {
   font-family: 'Zodiak';
-  src: url('../assets/fonts/Zodiak/Zodiak-Variable.ttf')
+  src: url('../assets/fonts/zodiak/Zodiak-Variable.ttf')
        format('truetype');
   font-weight: 100 900;
   font-style: normal;
@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: 'Zodiak';
-  src: url('../assets/fonts/Zodiak/Zodiak-VariableItalic.ttf')
+  src: url('../assets/fonts/zodiak/Zodiak-VariableItalic.ttf')
        format('truetype');
   font-weight: 100 900;
   font-style: italic;
