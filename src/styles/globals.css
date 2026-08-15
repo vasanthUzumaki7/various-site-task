@@ -1,0 +1,58 @@
+.custom-bullet.swiper-pagination-bullet-active {
+  width: 96px;
+  background: #3b2418;
+}
+
+.custom-bullet.swiper-pagination-bullet{
+    border-radius: 10px;
+      width: 96px;
+}
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #8b6b58 transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #8b6b58;
+  border-radius: 999px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a07b65;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width:1536px){
+.custom-bullet.swiper-pagination-bullet{
+      width: 70px;
+}
+}
+@media (max-width:1200px){
+.custom-bullet.swiper-pagination-bullet{
+      width: 60px;
+}
+
+}
+@media (max-width:992px){
+.custom-bullet.swiper-pagination-bullet{
+      width: 60px;
+      height: 6px;
+}
+}

@@ -1,0 +1,243 @@
+@import "./styles/font.css";
+@import "tailwindcss";
+@import "./styles/globals.css";
+
+:root {
+  --heading-color: #2f2217;
+  --text-color: #2f2217;
+  --color-primary: #2f2217;
+  --color-bg: #f7f3ef;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  /* --font-primary: "Inter", serif; */
+  --font-Inter: "Inter", serif;
+  --font-secondary: "Zodiak", serif;
+  --font-fraunces: "Fraunces", serif;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: var(--color-bg);
+}
+
+@theme inline {
+  /* Fonts */
+  --font-fraunces: "Fraunces", serif;
+  --font-zodiak: "Zodiak", serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* Brand */
+  --color-brand: #2f2217;
+  --color-content: #2f2217;
+  --color-cream: #f5f0e8bf;
+
+  /* Primary text */
+  --color-primary: #2e2018;
+  --color-primary-dark: #2f2217;
+
+  /* Brand / accent */
+  --color-accent: #8b6a52;
+  --color-accent-light: #d8b27a;
+  --color-accent-soft: #e4c18b;
+  --color-accent-muted: #c8ae92;
+  --color-accent-border: #6b4b37;
+  --color-accent-border-light: #6b5244;
+
+  /* Backgrounds */
+  --color-surface: #f7f4f1;
+  --color-surface-soft: #efe7e1;
+  --color-surface-muted: #e7ded6;
+  --color-surface-light: #e7e1db;
+  --color-card: #f3eee9;
+  --color-overlay: #ddd6cf;
+  --color-white-card: #f5ede5;
+
+  /* Borders */
+  --color-border: #4a3226;
+  --color-border-light: #d9cfc7;
+  --color-border-soft: #d9d9d9;
+  --color-border-warm: #c4a97e80;
+
+  /* Footer */
+  --color-footer-bg: #3f332c;
+  --color-footer-dark: #3a2419;
+  --color-logo-bg: #3b2418;
+
+  /* Gold */
+  --color-gold: #f5dfbb;
+
+  /* Alpha colors */
+  --color-text-alpha: #f5f0e8;
+  --color-text-alpha-40: #f5f0e866;
+  --color-text-alpha-45: #f5f0e873;
+  --color-text-alpha-55: #f5f0e88c;
+  --color-text-alpha-30: #f5f0e84d;
+  --color-border-alpha: #f5f0e826;
+  --color-overlay-alpha: #f5f0e859;
+}
+
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  /* Custom breakpoints */
+  --breakpoint-laptop: 1150px;
+  --breakpoint-desktop: 1400px;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  letter-spacing: -6%;
+  color: var(--color-primary);
+  line-height: 100%;
+}
+h2 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  color: var(--color-primary);
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -4%;
+}
+h3 {
+  font-size: 28px;
+  color: var(--color-primary);
+  font-family: var(--font-Inter);
+}
+h4 {
+  font-size: 24px;
+  font-family: var(--font-Inter);
+  font-weight: 400;
+}
+.tab-menu {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  color: var(--color-primary);
+  font-size: 64px;
+  line-height: 110%;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  opacity: 80%;
+  color: var(--text-color);
+  font-family: var(--font-Inter);
+}
+.footer-para {
+  color: #f5f0e8;
+  opacity: 50%;
+  text-align: justify;
+}
+
+.footer-bottom a,
+.footer-bottom p {
+  color: #f5f0e859;
+  font-size: 12px !important;
+  font-family: var(--font-Inter);
+}
+a {
+  text-decoration: none;
+}
+
+footer p {
+  color: #f5f0e8bf;
+}
+
+.SectionPaddingTop {
+  padding-top: 94px;
+}
+.SectionPaddingBottom {
+  padding-bottom: 94px;
+}
+
+@media (max-width: 1536px) {
+  .tab-menu {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 1400px) {
+  h2 {
+    font-size: 37px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .tab-menu {
+    font-size: 37px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .SectionPaddingTop {
+    padding-top: 74px;
+  }
+  .SectionPaddingBottom {
+    padding-bottom: 74px;
+  }
+}
+@media (max-width: 1200px) {
+  h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tab-menu {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  .SectionPaddingTop {
+    padding-top: 54px;
+  }
+  .SectionPaddingBottom {
+    padding-bottom: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-menu {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 14px;
+  }
+  .tab-menu {
+    font-size: 20px;
+  }
+}
