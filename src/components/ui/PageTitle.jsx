@@ -7,7 +7,7 @@ export default function PageTitle({
   return (
     <div className={`xl:mb-[30px] mb-[15px] ${PageCustom}`}>
 
-      <h1 className=" xl:mb-[30px] mb-[15px]">
+      <h1 className=" xl:mb-[30px] mb-[15px] font-zodiak">
         {PageTitle}
          <span className="block italic">{PageSpan}</span>
       </h1>
